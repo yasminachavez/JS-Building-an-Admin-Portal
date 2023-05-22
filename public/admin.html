@@ -8,9 +8,15 @@
 </head>
 
 <body>
-   <div id="root">
-       
-   </div>
+    <form id="shinobiBook">
+        The Shinobi Initiative: <input type="number"><br>
+        <input type="button" onclick="update()" value="update">
+      </form>
+      
+      <script>
+      function update() {
+        document.getElementById("frm1").save();
+      }
     <!-- Our JavaScript Code  -->
     <script src="admin.js"></script>
 </body>
