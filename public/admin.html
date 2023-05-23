@@ -8,12 +8,32 @@
 </head>
 
 <body>
-    <form id="shinobiBook">
-        The Shinobi Initiative: <input type="number"><br>
-        <input type="button" onclick="update()" value="update">
-      </form>
-      
-      <script>
+  <ul>
+    <form action="/server.js">
+    <li>
+      <label for="book1">The Shinobi Initiative:</label>
+      <input type="number" id="book1" name="book1" value="">
+      <input type="submit" value="Submit">
+    </li>
+     <li>
+      <label for="book1">Tess the Wonder Dog:</label>
+      <input type="number" id="book1" name="book1" value="">
+      <input type="submit" value="Submit">
+    </li>
+    <li>
+      <label for="book1">The Legends of Arathrae:</label>
+      <input type="number" id="book1" name="book1" value="">
+      <input type="submit" value="Submit">
+    </li>
+    <li>
+      <label for="book1">WaRP:</label>
+      <input type="number" id="book1" name="book1" value="">
+      <input type="submit" value="Submit">
+     </li>
+    </form> 
+</ul>
+
+    <script>
       function update() {
         document.getElementById("frm1").save();
       }

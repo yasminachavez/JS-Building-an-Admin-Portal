@@ -16,6 +16,15 @@ async function main() {
           }),
     }); 
 }
+// Book List Function added for Admin 
+async function bookList(){
+    let response = await fetch('http://localhost:3001/listBooks', {
+            method: 'GET',
+            headers: {'Content-Type': 'application/json'}
+         }); 
+    let results = await response.json();
+        console.log(results)
+    }
 
 function renderBook(book) {
     let bookContainer = document.querySelector('.book-container')
